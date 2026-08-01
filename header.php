@@ -21,7 +21,7 @@
             <div class="top-bar-contact">
                 <div class="contact-pill">
                     <span class="icon-circle"><i class="fas fa-phone-alt" style="color: #f59e0b;"></i></span>
-                    <span class="pill-text">(+94) 7777 99942</span>
+                    <span class="pill-text">071 944 7447</span>
                 </div>
                 <div class="contact-pill">
                     <span class="icon-circle"><i class="fas fa-envelope" style="color: #f59e0b;"></i></span>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="contact-pill">
                     <span class="icon-circle"><i class="fas fa-map-marker-alt" style="color: #f59e0b;"></i></span>
-                    <span class="pill-text">No.174, Thalpitiya North, Panadura, Sri Lanka</span>
+                    <span class="pill-text">7th Floor, Jaya City Mall, 718, Jana Nawala Rd</span>
                 </div>
             </div>
         </div>

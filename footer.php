@@ -35,11 +35,11 @@
                     <ul class="footer-contact">
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Colombo, Sri Lanka</span>
+                            <span>7th Floor, Jaya City Mall, 718, Jana Nawala Rd</span>
                         </li>
                         <li>
                             <i class="fas fa-phone-alt"></i>
-                            <span>+44 7931 262473</span>
+                            <span>071 944 7447</span>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
