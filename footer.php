@@ -35,11 +35,15 @@
                     <ul class="footer-contact">
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>No.174, Thalpitiya North, Panadura, Sri Lanka</span>
+                            <span>Colombo, Sri Lanka</span>
                         </li>
                         <li>
                             <i class="fas fa-phone-alt"></i>
-                            <span>(+94) 7777 99942</span>
+                            <span>+44 7931 262473</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>9 AM – 6 PM</span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
@@ -49,7 +53,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.</p>
+                <p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All rights reserved. | Powered by SmartAI solutions</p>
             </div>
         </div>
     </footer>
