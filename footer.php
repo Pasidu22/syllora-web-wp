@@ -4,7 +4,8 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpeg" alt="<?php bloginfo( 'name' ); ?> Logo" class="footer-logo-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo( 'name' ); ?> Logo" class="footer-logo-img">
+                        <span class="logo-text">Syllora.lk</span>
                     </a>
                     <p class="footer-desc">Your trusted partner in international education and visa consulting. We pave the way for your future success globally.</p>
                     <div class="social-links">

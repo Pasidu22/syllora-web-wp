@@ -39,7 +39,8 @@
     <header class="header" id="header">
         <div class="container nav-container">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.jpeg" alt="<?php bloginfo( 'name' ); ?> Logo" class="logo-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php bloginfo( 'name' ); ?> Logo" class="logo-img">
+                <span class="logo-text">Syllora.lk</span>
             </a>
             <nav class="nav-menu" id="nav-menu">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>#home" class="nav-link active">Home</a>
