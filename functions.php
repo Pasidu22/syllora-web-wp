@@ -49,3 +49,61 @@ function syllora_register_custom_post_types() {
 }
 add_action('init', 'syllora_register_custom_post_types');
 
+// Auto-create About page if it doesn't exist
+function create_about_page_if_not_exists() {
+    if ( ! get_page_by_path('about') ) {
+        wp_insert_post( array(
+            'post_title'     => 'About Us',
+            'post_name'      => 'about',
+            'post_status'    => 'publish',
+            'post_type'      => 'page',
+            'page_template'  => 'template-about.php'
+        ) );
+    }
+}
+add_action( 'init', 'create_about_page_if_not_exists' );
+
+// Handle Contact Form Submission
+function handle_consultation_form_submission() {
+    if ( ! isset( $_POST['consultation_nonce'] ) || ! wp_verify_nonce( $_POST['consultation_nonce'], 'consultation_form_nonce' ) ) {
+        wp_die( 'Security check failed.' );
+    }
+
+    $title = sanitize_text_field( $_POST['title'] ?? '' );
+    $first_name = sanitize_text_field( $_POST['first_name'] ?? '' );
+    $last_name = sanitize_text_field( $_POST['last_name'] ?? '' );
+    $email = sanitize_email( $_POST['email'] ?? '' );
+    $mobile = sanitize_text_field( $_POST['mobile_number'] ?? '' );
+    $whatsapp = sanitize_text_field( $_POST['whatsapp_number'] ?? '' );
+    $destination = sanitize_text_field( $_POST['destination'] ?? '' );
+    $date = sanitize_text_field( $_POST['pref_date'] ?? '' );
+    $time = sanitize_text_field( $_POST['pref_time'] ?? '' );
+    $message_body = sanitize_textarea_field( $_POST['message'] ?? '' );
+
+    $to = 'info@syllora.edu.lk';
+    $subject = 'New Free Consultation Booking: ' . $first_name . ' ' . $last_name;
+    
+    $body = "You have received a new consultation booking.\n\n";
+    $body .= "Name: $title $first_name $last_name\n";
+    $body .= "Email: $email\n";
+    $body .= "Mobile: $mobile\n";
+    $body .= "WhatsApp: $whatsapp\n";
+    $body .= "Destination: $destination\n";
+    $body .= "Preferred Date: $date\n";
+    $body .= "Preferred Time: $time\n";
+    $body .= "Message: \n$message_body\n";
+
+    $headers = array('Reply-To: ' . $first_name . ' <' . $email . '>');
+
+    $sent = wp_mail( $to, $subject, $body, $headers );
+
+    if ( $sent ) {
+        wp_redirect( home_url( '/?status=success#contact' ) );
+    } else {
+        wp_redirect( home_url( '/?status=error#contact' ) );
+    }
+    exit;
+}
+add_action( 'admin_post_nopriv_submit_consultation_form', 'handle_consultation_form_submission' );
+add_action( 'admin_post_submit_consultation_form', 'handle_consultation_form_submission' );
+
