@@ -121,3 +121,11 @@ add_filter( 'document_title_parts', function( $title ) {
     }
     return $title;
 } );
+
+// Force clean browser title without any hyphens or missing taglines
+add_filter( 'pre_get_document_title', function() {
+    if ( is_front_page() || is_home() ) {
+        return 'Syllora | Your Gateway to World-class Education';
+    }
+    return get_bloginfo('name');
+}, 999 );
