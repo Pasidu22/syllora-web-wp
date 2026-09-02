@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="dest-card reveal">
-                    <img src="https://images.unsplash.com/photo-1549140600-78e0d952a233?auto=format&fit=crop&q=80&w=800" alt="Latvia" class="dest-img">
+                    <img src="https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?auto=format&fit=crop&q=80&w=800" alt="Latvia" class="dest-img">
                     <div class="dest-overlay">
                         <h3 class="dest-title">Latvia</h3>
                         <a href="#" class="dest-link">Apply Now <i class="fas fa-arrow-right"></i></a>
@@ -131,7 +131,7 @@
                     </div>
                 </div>
                 <div class="dest-card reveal">
-                    <img src="https://images.unsplash.com/photo-1596422846543-75c6ff416781?auto=format&fit=crop&q=80&w=800" alt="Malaysia" class="dest-img">
+                    <img src="https://images.unsplash.com/photo-1508062878650-88b52897f298?auto=format&fit=crop&q=80&w=800" alt="Malaysia" class="dest-img">
                     <div class="dest-overlay">
                         <h3 class="dest-title">Malaysia</h3>
                         <a href="#" class="dest-link">Apply Now <i class="fas fa-arrow-right"></i></a>
@@ -347,5 +347,6 @@
     </section>
 
 <?php get_footer(); ?>
+
 
 
