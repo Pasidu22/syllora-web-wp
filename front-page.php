@@ -2,12 +2,12 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.png" alt="University Campus" class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1920" alt="University Campus" class="hero-bg">
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content reveal active">
                 <span class="hero-subtitle">Illuminate Your Path to Success</span>
-                <h1 class="hero-title">Study in <span>Australia</span> & Beyond</h1>
+                <h1 class="hero-title">Study in <span>the UK</span> & Beyond</h1>
                 <p class="hero-desc">We guide students to achieve their academic goals globally. Discover top universities, secure scholarships, and get expert visa assistance with Syllora.</p>
                 <div class="hero-btns">
                     <a href="#destinations" class="btn btn-primary">Find Out More <i class="fas fa-arrow-right"></i></a>
@@ -37,7 +37,7 @@
                         <i class="fas fa-university"></i>
                     </div>
                     <h3 class="service-title">University Admission</h3>
-                    <p class="service-desc">We help secure your spot at top universities in Australia, UK, Canada, and New Zealand.</p>
+                    <p class="service-desc">We help secure your spot at top universities in the UK, Malta, Latvia, Dubai, Singapore, and Malaysia.</p>
                 </div>
                 <div class="service-card reveal">
                     <div class="service-icon">
@@ -62,7 +62,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-img-wrap reveal">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-img.png" alt="Syllora Consultants" class="about-img">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800" alt="Syllora Consultants" class="about-img">
                     <div class="about-experience">
                         <span class="about-experience-num">10</span>
                         <span class="about-experience-text">Years of<br>Excellence</span>
@@ -73,13 +73,15 @@
                         <span class="section-subtitle">Who We Are</span>
                         <h2 class="section-title">A Global Leader in Overseas Education</h2>
                     </div>
-                    <p class="about-desc">Syllora was founded to guide students toward their academic dreams. Our team provides end-to-end support, from selecting the right course to securing your visa, ensuring a seamless journey to your dream university.</p>
+                    
+                    <p class="about-desc">Syllora (Pvt) Ltd is a leading education consultancy in Sri Lanka, dedicated to guiding students towards international academic and career success. With a strong international focus and extensive experience in the education sector, we support students who wish to pursue higher education in the United Kingdom, Malta, Latvia, Dubai, Singapore and Malaysia.</p>
                     <ul class="about-list">
                         <li><i class="fas fa-check"></i> Personalized guidance for program selection</li>
                         <li><i class="fas fa-check"></i> Proven track record of successful placements</li>
                         <li><i class="fas fa-check"></i> Transparent, professional, and free consultations</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+
+                    <a href="<?php echo esc_url( home_url( '/about' ) ); ?>" class="btn btn-primary" style="margin-top: 2rem;">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -94,13 +96,6 @@
             </div>
             <div class="destinations-grid">
                 <div class="dest-card reveal">
-                    <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&q=80&w=800" alt="Australia" class="dest-img">
-                    <div class="dest-overlay">
-                        <h3 class="dest-title">Australia</h3>
-                        <a href="#" class="dest-link">Apply Now <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="dest-card reveal">
                     <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=800" alt="United Kingdom" class="dest-img">
                     <div class="dest-overlay">
                         <h3 class="dest-title">United Kingdom</h3>
@@ -108,16 +103,37 @@
                     </div>
                 </div>
                 <div class="dest-card reveal">
-                    <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&q=80&w=800" alt="New Zealand" class="dest-img">
+                    <img src="https://images.unsplash.com/photo-1533676802871-eca1ae998cd5?auto=format&fit=crop&q=80&w=800" alt="Malta" class="dest-img">
                     <div class="dest-overlay">
-                        <h3 class="dest-title">New Zealand</h3>
+                        <h3 class="dest-title">Malta</h3>
                         <a href="#" class="dest-link">Apply Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="dest-card reveal">
-                    <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&q=80&w=800" alt="Canada" class="dest-img">
+                    <img src="https://images.unsplash.com/photo-1549140600-78e0d952a233?auto=format&fit=crop&q=80&w=800" alt="Latvia" class="dest-img">
                     <div class="dest-overlay">
-                        <h3 class="dest-title">Canada</h3>
+                        <h3 class="dest-title">Latvia</h3>
+                        <a href="#" class="dest-link">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="dest-card reveal">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800" alt="Dubai" class="dest-img">
+                    <div class="dest-overlay">
+                        <h3 class="dest-title">Dubai</h3>
+                        <a href="#" class="dest-link">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="dest-card reveal">
+                    <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&q=80&w=800" alt="Singapore" class="dest-img">
+                    <div class="dest-overlay">
+                        <h3 class="dest-title">Singapore</h3>
+                        <a href="#" class="dest-link">Apply Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="dest-card reveal">
+                    <img src="https://images.unsplash.com/photo-1596422846543-75c6ff416781?auto=format&fit=crop&q=80&w=800" alt="Malaysia" class="dest-img">
+                    <div class="dest-overlay">
+                        <h3 class="dest-title">Malaysia</h3>
                         <a href="#" class="dest-link">Apply Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -180,7 +196,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="section section-bg-light section-testimonials" id="testimonials">
+    <section class="section section-dark" id="testimonials">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-subtitle">Success Stories</span>
@@ -229,5 +245,107 @@
         </div>
     </section>
 
+    <!-- Contact / Book Consultation Section -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Book Free Consultation</h2>
+            </div>
+            
+            <div class="contact-form-wrap reveal">
+                <?php if ( isset($_GET['status']) && $_GET['status'] == 'success' ) : ?>
+                    <div class="alert alert-success" style="background: #d1fae5; color: #065f46; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                        Thank you! Your consultation request has been sent successfully. We will contact you soon.
+                    </div>
+                <?php elseif ( isset($_GET['status']) && $_GET['status'] == 'error' ) : ?>
+                    <div class="alert alert-danger" style="background: #fee2e2; color: #991b1b; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                        Sorry, there was an error sending your message. Please try again.
+                    </div>
+                <?php endif; ?>
+                
+                <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="POST" class="consultation-form">
+                    <input type="hidden" name="action" value="submit_consultation_form">
+                    <?php wp_nonce_field('consultation_form_nonce', 'consultation_nonce'); ?>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <select name="title" id="title" class="form-control">
+                                <option value="">Select Title</option>
+                                <option value="Mr">Mr.</option>
+                                <option value="Mrs">Mrs.</option>
+                                <option value="Miss">Miss.</option>
+                                <option value="Ms">Ms.</option>
+                                <option value="Dr">Dr.</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row" style="display: flex; gap: 15px;">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" class="form-control" required>
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-row" style="display: flex; gap: 15px;">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="mobile_number">Mobile number</label>
+                            <input type="tel" id="mobile_number" name="mobile_number" class="form-control" required>
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="whatsapp_number">WhatsApp number</label>
+                            <input type="tel" id="whatsapp_number" name="whatsapp_number" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Preferred Study Destination</label>
+                        <select name="destination" id="destination" class="form-control" required>
+                            <option value="">Select Destination</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Malaysia">Malaysia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row" style="display: flex; gap: 15px;">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="pref_date">Preferred Date</label>
+                            <input type="date" id="pref_date" name="pref_date" class="form-control">
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="pref_time">Preferred Time</label>
+                            <input type="time" id="pref_time" name="pref_time" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message" class="form-control" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-submit" style="text-align: center; margin-top: 20px;">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
 <?php get_footer(); ?>
+
 
