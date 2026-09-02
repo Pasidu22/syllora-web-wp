@@ -1180,3 +1180,42 @@ textarea.form-control {
 .testimonial-status {
   color: var(--primary-color, #38bdf8) !important;
 }
+
+/* Seamless Hero Background & Video Transition */
+.hero {
+  background-color: #0f172a !important; /* Prevents white blank screen on initial load */
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  z-index: 2 !important;
+}
+
+.hero-content {
+  z-index: 3 !important;
+  position: relative;
+}
