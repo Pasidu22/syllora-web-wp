@@ -1130,3 +1130,53 @@ textarea.form-control {
     padding: 30px 20px !important;
   }
 }
+
+/* Dark Themes for About and Testimonials Sections */
+#about, .section-testimonials {
+  background-color: var(--secondary-color, #1e1b4b) !important;
+  color: var(--white) !important;
+}
+
+#about .section-title, 
+.section-testimonials .section-title {
+  color: #ffffff !important;
+}
+
+#about .section-subtitle, 
+.section-testimonials .section-subtitle {
+  color: var(--primary-color, #38bdf8) !important;
+}
+
+#about .about-desc, 
+#about .about-desc p {
+  color: #cbd5e1 !important;
+}
+
+#about .about-list li {
+  color: #f1f5f9 !important;
+}
+
+#about .about-list li i {
+  color: var(--primary-color, #38bdf8) !important;
+}
+
+.section-testimonials .no-posts-msg {
+  color: #94a3b8 !important;
+}
+
+.testimonial-card {
+  background-color: #292567 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.testimonial-body {
+  color: #e2e8f0 !important;
+}
+
+.testimonial-name {
+  color: #ffffff !important;
+}
+
+.testimonial-status {
+  color: var(--primary-color, #38bdf8) !important;
+}
