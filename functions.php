@@ -107,3 +107,17 @@ function handle_consultation_form_submission() {
 add_action( 'admin_post_nopriv_submit_consultation_form', 'handle_consultation_form_submission' );
 add_action( 'admin_post_submit_consultation_form', 'handle_consultation_form_submission' );
 
+
+// Customize Document Title (Fix trailing hyphen 'Syllora -')
+add_filter( 'document_title_separator', function( $sep ) {
+    return '|';
+} );
+
+add_filter( 'document_title_parts', function( $title ) {
+    if ( empty( $title['tagline'] ) ) {
+        if ( is_front_page() || is_home() ) {
+            $title['tagline'] = 'Your Gateway to World-class Education';
+        }
+    }
+    return $title;
+} );
