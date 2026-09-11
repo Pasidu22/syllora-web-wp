@@ -5,10 +5,10 @@
         <!-- Hero Background Image Slider -->
         <div class="hero-slider" id="heroSlider">
             <?php 
-            $img1 = esc_url( set_url_scheme( get_template_directory_uri() . '/assets/images/hero_image1.jpg', 'https' ) );
-            $img2 = esc_url( set_url_scheme( get_template_directory_uri() . '/assets/images/hero_image2.jpg', 'https' ) );
-            $img3 = esc_url( set_url_scheme( get_template_directory_uri() . '/assets/images/hero_image3.jpg', 'https' ) );
-            $img4 = esc_url( set_url_scheme( get_template_directory_uri() . '/assets/images/hero_image4.jpg', 'https' ) );
+            $img1 = esc_url( get_theme_file_uri( 'assets/images/hero_image1.jpg' ) );
+            $img2 = esc_url( get_theme_file_uri( 'assets/images/hero_image2.jpg' ) );
+            $img3 = esc_url( get_theme_file_uri( 'assets/images/hero_image3.jpg' ) );
+            $img4 = esc_url( get_theme_file_uri( 'assets/images/hero_image4.jpg' ) );
             ?>
             <div class="hero-slide active" style="background-image: url('<?php echo $img1; ?>');">
                 <img src="<?php echo $img1; ?>" alt="Syllora Hero 1" class="hero-slide-img">
