@@ -13,11 +13,9 @@
     <div class="top-bar">
         <div class="container top-bar-container">
             <div class="top-bar-socials">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/syllorastudyabroad?sfnsn=wa&mibextid=RUbZ1f" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/syllorastudyabroad?stkn=cWhxN2V3bTdyeThu" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/94719447447" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
             </div>
             <div class="top-bar-contact">
                 <div class="contact-pill">

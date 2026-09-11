@@ -9,10 +9,9 @@
                     </a>
                     <p class="footer-desc">Your trusted partner in international education and visa consulting. We pave the way for your future success globally.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/syllorastudyabroad?sfnsn=wa&mibextid=RUbZ1f" target="_blank" rel="noopener" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/syllorastudyabroad?stkn=cWhxN2V3bTdyeThu" target="_blank" rel="noopener" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/94719447447" target="_blank" rel="noopener" class="social-link"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
