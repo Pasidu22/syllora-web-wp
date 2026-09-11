@@ -64,6 +64,12 @@
         </div>
     </footer>
 
+        <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/94719447447?text=Hi%20Syllora%2C%20I%20would%20like%20to%20get%20more%20information%20about%20study%20abroad." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
     <?php wp_footer(); ?>
 </body>
 </html>
