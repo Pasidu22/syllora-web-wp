@@ -2,28 +2,16 @@
 
             <!-- Hero Section -->
     <section class="hero" id="home">
-        <img src="" alt="Syllora Hero Poster" class="hero-bg hero-poster" id="heroPoster">
-        
-        <video autoplay loop muted playsinline class="hero-bg hero-video" id="heroVideo">
-            <source src="<?php echo set_url_scheme(get_template_directory_uri() . '/assets/videos/hero_video.mp4', 'https'); ?>" type="video/mp4">
-            <source src="<?php echo get_template_directory_uri() . '/assets/videos/hero_video.mp4'; ?>" type="video/mp4">
-        </video>
+        <!-- Hero Background Image Slider -->
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero_image1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero_image2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero_image3.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero_image4.jpg');"></div>
+        </div>
 
         <div class="hero-overlay"></div>
-        <script>
-            (function() {
-                var v = document.getElementById('heroVideo');
-                if (v) {
-                    v.muted = true;
-                    var promise = v.play();
-                    if (promise !== undefined) {
-                        promise.catch(function(error) {
-                            console.log("Autoplay prevented:", error);
-                        });
-                    }
-                }
-            })();
-        </script>
+
         <div class="container">
             <div class="hero-content reveal active">
                 <span class="hero-subtitle">Illuminate Your Path to Success</span>
@@ -36,6 +24,20 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var slides = document.querySelectorAll("#heroSlider .hero-slide");
+            if (slides.length > 0) {
+                var currentSlide = 0;
+                setInterval(function() {
+                    slides[currentSlide].classList.remove("active");
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add("active");
+                }, 5000);
+            }
+        });
+    </script>
 
     <!-- Services Section -->
     <section class="section section-bg-light" id="services">
