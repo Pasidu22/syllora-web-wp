@@ -80,7 +80,7 @@ function handle_consultation_form_submission() {
     $time = sanitize_text_field( $_POST['pref_time'] ?? '' );
     $message_body = sanitize_textarea_field( $_POST['message'] ?? '' );
 
-    $to = 'info@syllora.edu.lk';
+    $to = 'Syllora@outlook.com';
     $subject = 'New Free Consultation Booking: ' . $first_name . ' ' . $last_name;
     
     $body = "You have received a new consultation booking.\n\n";

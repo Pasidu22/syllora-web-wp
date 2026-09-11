@@ -45,11 +45,15 @@
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
-                            <span>9 AM – 6 PM</span>
+                            <span>9 AM - 6 PM</span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <span>info@syllora.edu.lk</span>
+                            <span>info@syllora.lk</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Syllora@outlook.com</span>
                         </li>
                     </ul>
                 </div>

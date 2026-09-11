@@ -24,7 +24,7 @@
                 </div>
                 <div class="contact-pill">
                     <span class="icon-circle"><i class="fas fa-envelope" style="color: #f59e0b;"></i></span>
-                    <span class="pill-text">info@syllora.edu.lk</span>
+                    <span class="pill-text">info@syllora.lk</span>
                 </div>
                 <div class="contact-pill">
                     <span class="icon-circle"><i class="fas fa-map-marker-alt" style="color: #f59e0b;"></i></span>
