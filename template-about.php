@@ -29,6 +29,9 @@ get_header(); ?>
                 <p class="about-desc">Syllora (Pvt) Ltd is a leading education consultancy in Sri Lanka, dedicated to guiding students towards international academic and career success. With a strong international focus and extensive experience in the education sector, we support students who wish to pursue higher education in the United Kingdom, Malta, Latvia, Dubai, Singapore and Malaysia.</p>
                 <p class="about-desc">We provide comprehensive, end-to-end support throughout the study abroad journey, including course and university selection, application and documentation support, interview preparation, visa guidance, accommodation assistance, and pre-departure briefings.</p>
                 <p class="about-desc">Our student-first approach ensures that every student receives personalised guidance, accurate information and ethical support, helping them make informed decisions about their education and future.</p>
+                <p class="about-desc">With a growing network of international education opportunities, Syllora is committed to connecting students with the right institutions, courses and study destinations to match their academic goals and career aspirations.</p>
+                <p class="about-desc">Once you choose your destination, our experienced team is ready to guide you towards the next level of your academic journey.</p>
+                <p class="about-desc">At Syllora, we believe education has the power to transform lives, inspire ambition and create global opportunities. Our mission is to support every student with confidence and care as they take the next step towards a successful future.</p>
             </div>
         </div>
     </div>
@@ -70,27 +73,27 @@ get_header(); ?>
         <div class="commitments-grid reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
             <div style="display: flex; gap: 20px; background: var(--white); padding: 30px; border-radius: 12px; transition: transform 0.3s ease;">
                 <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 2rem; margin-top: 5px;"></i>
-                <p style="margin: 0; color: var(--text-dark); font-weight: 500;">Providing reliable, transparent and student-centred education consultancy services.</p>
+                <p style="margin: 0; color: var(--text-dark); font-weight: 500;"> Providing reliable, transparent and student-centred education consultancy services for students pursuing opportunities in the United Kingdom, Malta, Latvia, Dubai, Singapore and Malaysia.</p>
             </div>
             <div style="display: flex; gap: 20px; background: var(--white); padding: 30px; border-radius: 12px; transition: transform 0.3s ease;">
                 <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 2rem; margin-top: 5px;"></i>
-                <p style="margin: 0; color: var(--text-dark); font-weight: 500;">Delivering personalised, future-focused counselling for informed career decisions.</p>
+                <p style="margin: 0; color: var(--text-dark); font-weight: 500;"> Delivering personalised, future-focused counselling that enables students to make informed decisions about their education and career pathways with confidence.</p>
             </div>
             <div style="display: flex; gap: 20px; background: var(--white); padding: 30px; border-radius: 12px; transition: transform 0.3s ease;">
                 <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 2rem; margin-top: 5px;"></i>
-                <p style="margin: 0; color: var(--text-dark); font-weight: 500;">Comprehensive support from university selection to visa and accommodation.</p>
+                <p style="margin: 0; color: var(--text-dark); font-weight: 500;"> Providing comprehensive support throughout the student journey, including course and university selection, applications, documentation, interview preparation, visa guidance and application support, accommodation assistance and pre-departure guidance.</p>
             </div>
             <div style="display: flex; gap: 20px; background: var(--white); padding: 30px; border-radius: 12px; transition: transform 0.3s ease;">
                 <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 2rem; margin-top: 5px;"></i>
-                <p style="margin: 0; color: var(--text-dark); font-weight: 500;">Upholding the highest standards of ethics, professionalism and transparency.</p>
+                <p style="margin: 0; color: var(--text-dark); font-weight: 500;"> Building and maintaining our reputation as a trusted international education consultancy while continuing to strengthen our global network and partnerships.</p>
             </div>
             <div style="display: flex; gap: 20px; background: var(--white); padding: 30px; border-radius: 12px; transition: transform 0.3s ease;">
                 <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 2rem; margin-top: 5px;"></i>
-                <p style="margin: 0; color: var(--text-dark); font-weight: 500;">Building a trusted reputation and strengthening global partnerships.</p>
+                <p style="margin: 0; color: var(--text-dark); font-weight: 500;"> Upholding the highest standards of ethics, professionalism, transparency and service excellence at every stage of the student journey.</p>
             </div>
             <div style="display: flex; gap: 20px; background: var(--white); padding: 30px; border-radius: 12px; transition: transform 0.3s ease;">
                 <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 2rem; margin-top: 5px;"></i>
-                <p style="margin: 0; color: var(--text-dark); font-weight: 500;">Inspiring students to dream bigger and achieve beyond borders.</p>
+                <p style="margin: 0; color: var(--text-dark); font-weight: 500;"> Inspiring students to dream bigger, aim higher and achieve beyond borders, opening doors to transformative education and global career opportunities.</p>
             </div>
         </div>
     </div>
