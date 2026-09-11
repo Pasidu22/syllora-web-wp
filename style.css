@@ -1211,12 +1211,12 @@ textarea.form-control {
   color: var(--primary-color, #38bdf8) !important;
 }
 
-/* Floating WhatsApp Button (Bottom-Left Corner) */
+/* Floating WhatsApp Button (Right Side - High Elevation above Tidio) */
 .floating-whatsapp {
     position: fixed;
-    bottom: 25px;
-    left: 25px;
-    right: auto;
+    bottom: 155px;
+    right: 25px;
+    left: auto;
     width: 60px;
     height: 60px;
     background-color: #25d366;
@@ -1242,8 +1242,8 @@ textarea.form-control {
 
 .floating-whatsapp .whatsapp-tooltip {
     position: absolute;
-    left: 70px;
-    right: auto;
+    right: 70px;
+    left: auto;
     background: #111827;
     color: #ffffff;
     padding: 6px 12px;
@@ -1261,7 +1261,7 @@ textarea.form-control {
 .floating-whatsapp:hover .whatsapp-tooltip {
     opacity: 1;
     visibility: visible;
-    left: 72px;
+    right: 72px;
 }
 
 @keyframes whatsappPulse {
@@ -1278,8 +1278,9 @@ textarea.form-control {
 
 @media (max-width: 768px) {
     .floating-whatsapp {
-        bottom: 20px;
-        left: 20px;
+        bottom: 140px;
+        right: 20px;
+        left: auto;
         width: 52px;
         height: 52px;
         font-size: 28px;
