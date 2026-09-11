@@ -133,9 +133,6 @@ add_filter( 'pre_get_document_title', function() {
 
 // Inject Tidio Chatbot Script
 function syllora_add_tidio_script() {
-    $tidio_key = get_option( "syllora_tidio_key", "" );
-    if ( ! empty( $tidio_key ) ) {
-        echo "<script src=\"//code.tidio.co/" . esc_attr( $tidio_key ) . ".js\" async></script>\n";
-    }
+    echo '<script src="//code.tidio.co/satb4el9rbh5hcokklcaysw9tgvpb3t2.js" async></script>' . "\n";
 }
 add_action( "wp_footer", "syllora_add_tidio_script" );
