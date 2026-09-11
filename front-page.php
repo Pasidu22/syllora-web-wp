@@ -4,10 +4,24 @@
     <section class="hero" id="home">
         <!-- Hero Background Image Slider -->
         <div class="hero-slider" id="heroSlider">
-            <div class="hero-slide active" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero_image1.jpg');"></div>
-            <div class="hero-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero_image2.jpg');"></div>
-            <div class="hero-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero_image3.jpg');"></div>
-            <div class="hero-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero_image4.jpg');"></div>
+            <?php 
+            $img1 = esc_url( set_url_scheme( get_template_directory_uri() . '/assets/images/hero_image1.jpg', 'https' ) );
+            $img2 = esc_url( set_url_scheme( get_template_directory_uri() . '/assets/images/hero_image2.jpg', 'https' ) );
+            $img3 = esc_url( set_url_scheme( get_template_directory_uri() . '/assets/images/hero_image3.jpg', 'https' ) );
+            $img4 = esc_url( set_url_scheme( get_template_directory_uri() . '/assets/images/hero_image4.jpg', 'https' ) );
+            ?>
+            <div class="hero-slide active" style="background-image: url('<?php echo $img1; ?>');">
+                <img src="<?php echo $img1; ?>" alt="Syllora Hero 1" class="hero-slide-img">
+            </div>
+            <div class="hero-slide" style="background-image: url('<?php echo $img2; ?>');">
+                <img src="<?php echo $img2; ?>" alt="Syllora Hero 2" class="hero-slide-img">
+            </div>
+            <div class="hero-slide" style="background-image: url('<?php echo $img3; ?>');">
+                <img src="<?php echo $img3; ?>" alt="Syllora Hero 3" class="hero-slide-img">
+            </div>
+            <div class="hero-slide" style="background-image: url('<?php echo $img4; ?>');">
+                <img src="<?php echo $img4; ?>" alt="Syllora Hero 4" class="hero-slide-img">
+            </div>
         </div>
 
         <div class="hero-overlay"></div>

@@ -297,6 +297,7 @@ img {
   align-items: center;
   overflow: hidden;
   padding-top: 80px;
+  background-color: #0f172a;
 }
 
 .hero-slider {
@@ -320,6 +321,15 @@ img {
   opacity: 0;
   transform: scale(1.06);
   transition: opacity 1.5s ease-in-out, transform 6s ease-out;
+}
+
+.hero-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero-slide.active {
@@ -1201,11 +1211,12 @@ textarea.form-control {
   color: var(--primary-color, #38bdf8) !important;
 }
 
-/* Floating WhatsApp Button */
+/* Floating WhatsApp Button (Bottom-Left Corner) */
 .floating-whatsapp {
     position: fixed;
-    bottom: 95px;
-    right: 25px;
+    bottom: 25px;
+    left: 25px;
+    right: auto;
     width: 60px;
     height: 60px;
     background-color: #25d366;
@@ -1216,7 +1227,7 @@ textarea.form-control {
     justify-content: center;
     font-size: 32px;
     box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    z-index: 9999;
+    z-index: 99999;
     transition: all 0.3s ease;
     text-decoration: none;
     animation: whatsappPulse 2s infinite;
@@ -1231,8 +1242,8 @@ textarea.form-control {
 
 .floating-whatsapp .whatsapp-tooltip {
     position: absolute;
-    right: 70px;
-    left: auto;
+    left: 70px;
+    right: auto;
     background: #111827;
     color: #ffffff;
     padding: 6px 12px;
@@ -1250,7 +1261,7 @@ textarea.form-control {
 .floating-whatsapp:hover .whatsapp-tooltip {
     opacity: 1;
     visibility: visible;
-    right: 72px;
+    left: 72px;
 }
 
 @keyframes whatsappPulse {
@@ -1267,8 +1278,8 @@ textarea.form-control {
 
 @media (max-width: 768px) {
     .floating-whatsapp {
-        bottom: 85px;
-        right: 20px;
+        bottom: 20px;
+        left: 20px;
         width: 52px;
         height: 52px;
         font-size: 28px;
