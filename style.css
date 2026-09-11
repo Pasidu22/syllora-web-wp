@@ -1225,8 +1225,8 @@ textarea.form-control {
 /* Floating WhatsApp Button */
 .floating-whatsapp {
     position: fixed;
-    bottom: 25px;
-    left: 25px;
+    bottom: 95px;
+    right: 25px;
     width: 60px;
     height: 60px;
     background-color: #25d366;
@@ -1252,7 +1252,8 @@ textarea.form-control {
 
 .floating-whatsapp .whatsapp-tooltip {
     position: absolute;
-    left: 70px;
+    right: 70px;
+    left: auto;
     background: #111827;
     color: #ffffff;
     padding: 6px 12px;
@@ -1270,7 +1271,7 @@ textarea.form-control {
 .floating-whatsapp:hover .whatsapp-tooltip {
     opacity: 1;
     visibility: visible;
-    left: 72px;
+    right: 72px;
 }
 
 @keyframes whatsappPulse {
@@ -1287,8 +1288,8 @@ textarea.form-control {
 
 @media (max-width: 768px) {
     .floating-whatsapp {
-        bottom: 20px;
-        left: 20px;
+        bottom: 85px;
+        right: 20px;
         width: 52px;
         height: 52px;
         font-size: 28px;
