@@ -108,28 +108,63 @@ add_action( 'admin_post_nopriv_submit_consultation_form', 'handle_consultation_f
 add_action( 'admin_post_submit_consultation_form', 'handle_consultation_form_submission' );
 
 
-// Customize Document Title (Fix trailing hyphen 'Syllora -')
+// Customize Document Title (Replace hyphens with | and attach tagline)
 add_filter( 'document_title_separator', function( $sep ) {
     return '|';
-} );
+}, 99999 );
 
-add_filter( 'document_title_parts', function( $title ) {
-    if ( empty( $title['tagline'] ) ) {
-        if ( is_front_page() || is_home() ) {
-            $title['tagline'] = 'Your Gateway to World-class Education';
+add_filter( 'document_title_parts', function( $parts ) {
+    $site_name = 'Syllora';
+    $tagline   = 'Your Gateway to World-class Education';
+    
+    if ( is_front_page() || is_home() ) {
+        return array(
+            'title'   => $site_name,
+            'tagline' => $tagline
+        );
+    }
+    
+    if ( is_page() || is_single() ) {
+        $page_title = get_the_title();
+        return array(
+            'title' => !empty($page_title) ? $page_title : $site_name,
+            'site'  => $site_name
+        );
+    }
+    
+    return array(
+        'title'   => $site_name,
+        'tagline' => $tagline
+    );
+}, 99999 );
+
+add_filter( 'pre_get_document_title', function( $title ) {
+    $site_name = 'Syllora';
+    $tagline   = 'Your Gateway to World-class Education';
+    
+    if ( is_front_page() || is_home() ) {
+        return $site_name . ' | ' . $tagline;
+    }
+    
+    if ( is_page() || is_single() ) {
+        $page_title = get_the_title();
+        if ( ! empty( $page_title ) ) {
+            return $page_title . ' | ' . $site_name;
         }
     }
-    return $title;
-} );
+    
+    return $site_name . ' | ' . $tagline;
+}, 99999 );
 
-// Force clean browser title without any hyphens or missing taglines
-add_filter( 'pre_get_document_title', function() {
+add_filter( 'wp_title', function( $title, $sep, $seplocation ) {
+    $site_name = 'Syllora';
+    $tagline   = 'Your Gateway to World-class Education';
     if ( is_front_page() || is_home() ) {
-        return 'Syllora | Your Gateway to World-class Education';
+        return $site_name . ' | ' . $tagline;
     }
-    return get_bloginfo('name');
-}, 999 );
-
+    $page_title = get_the_title();
+    return ( ! empty( $page_title ) ? $page_title . ' | ' : '' ) . $site_name;
+}, 99999, 3 );
 
 // Inject Tidio Chatbot Script
 function syllora_add_tidio_script() {
