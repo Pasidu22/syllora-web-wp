@@ -41,15 +41,23 @@
                         </li>
                         <li>
                             <i class="fas fa-phone-alt"></i>
-                            <span>+9411 2 866 448 | +9471 9 447 447</span>
+                            <span class="contact-links-wrap">
+                                <a href="tel:+94112866448" class="contact-link">+9411 2 866 448</a>
+                                <span class="contact-sep">|</span>
+                                <a href="tel:+94719447447" class="contact-link">+9471 9 447 447</a>
+                            </span>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
-                            <span>Monday–Friday: 9:00 am – 5:00 pm<br>Saturday: 9:00 am – 2:00 pm<br>Sunday: Closed</span>
+                            <span class="contact-hours">Monday&ndash;Friday: 9:00 am &ndash; 5:00 pm<br>Saturday: 9:00 am &ndash; 2:00 pm<br>Sunday: Closed</span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <span>info@syllora.lk | syllora@outlook.com</span>
+                            <span class="contact-links-wrap">
+                                <a href="mailto:info@syllora.lk" class="contact-link">info@syllora.lk</a>
+                                <span class="contact-sep">|</span>
+                                <a href="mailto:syllora@outlook.com" class="contact-link">syllora@outlook.com</a>
+                            </span>
                         </li>
                     </ul>
                 </div>

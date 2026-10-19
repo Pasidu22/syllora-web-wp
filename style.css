@@ -3,7 +3,7 @@ Theme Name: Syllora
 Theme URI: http://syllora.edu.lk
 Author: SmartAI Solutions
 Description: Custom WordPress Theme for Syllora Education Consultants.
-Version: 1.0.8
+Version: 1.0.9
 Text Domain: syllora
 */
 
@@ -655,8 +655,8 @@ img {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 40px;
+  grid-template-columns: 1.5fr 0.9fr 0.9fr 2.1fr;
+  gap: 36px;
   margin-bottom: 60px;
 }
 
@@ -729,15 +729,55 @@ img {
 
 .footer-contact li {
   display: flex;
-  gap: 12px;
-  margin-bottom: 16px;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
   color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .footer-contact i {
   color: var(--primary-color);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-top: 4px;
+  width: 20px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.footer-contact span,
+.footer-contact .contact-links-wrap {
+  flex: 1;
+}
+
+.contact-links-wrap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+}
+
+.contact-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color var(--transition-normal);
+}
+
+.contact-link:hover {
+  color: var(--primary-color);
+}
+
+.contact-sep {
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 300;
+  user-select: none;
+}
+
+.contact-hours {
+  line-height: 1.7;
+  color: #cbd5e1;
 }
 
 .footer-bottom {
