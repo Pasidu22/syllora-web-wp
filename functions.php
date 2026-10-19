@@ -8,7 +8,7 @@ add_action( 'after_setup_theme', 'syllora_theme_setup' );
 
 function syllora_theme_scripts() {
     wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', array(), '6.4.0' );
-    wp_enqueue_style( 'syllora-style', get_stylesheet_uri(), array(), '1.0.0' );
+    wp_enqueue_style( 'syllora-style', get_stylesheet_uri(), array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
     wp_enqueue_script( 'syllora-main', get_template_directory_uri() . '/main.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'syllora_theme_scripts' );
